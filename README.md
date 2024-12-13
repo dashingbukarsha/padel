@@ -18,4 +18,4 @@ i downloaded the data base from https://universe.roboflow.com/tennisballs/padel-
 4. use this for predictions `yolo task=detect mode=predict model=/padel/best.pt conf=0.25 source=/padel/test/images save=True`
 5.  and now you get the results in the runs folder
 
-[View a video explanation here](video link)
+[View a video explanation here](https://youtu.be/5TZpUgW1oRw)
