@@ -14,7 +14,7 @@ i downloaded the data base from https://universe.roboflow.com/tennisballs/padel-
 
 1. turn on the jetson nano and connecting to it
 2. clone repository
-3. run this command to download the docker container `sudo docker run -it --rm --volume ./padel:/padel --runtime nvidia us-central1-docker.pkg.dev/woven-edge-323322/jetson/ultralytics`
+3. run this command to download the docker container `sudo docker run -it --rm --volume $(pwd)/padel:/padel --runtime nvidia us-central1-docker.pkg.dev/woven-edge-323322/jetson/ultralytics`
 4. use this for predictions `yolo task=detect mode=predict model=/padel/best.pt conf=0.25 source=/padel/test/images save=True`
 5.  and now you get the results in the runs folder
 
